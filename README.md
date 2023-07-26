@@ -5,6 +5,7 @@ sRNA-Effector is a random forest based algorithm trained on enhanced Crosslinkin
 sRNA-Effector requires the following R packages:
 tidyverse,
 caret,
+ranger,
 PepTools,
 Peptides,
 fgsea,
