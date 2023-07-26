@@ -11,7 +11,6 @@ fgsea,
 optparse,
 biomaRt,
 data.table,
-Peptides,
 dplyr,
 readr,
 ggrepel
