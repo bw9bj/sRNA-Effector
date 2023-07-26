@@ -47,7 +47,7 @@ Options:
                 Show this help message and exit
 
 
-Output includes a text file of predictions, a stacked bar plot showing the proportion of miRNAs classified as either "BinderEffectors", "BinderNotEffectors", "NotBinderEffector", and "NotBinderNotEffector", and a ranked plot for predicted "BinderEffectors". If the optional miRNA flag is passed, sRNA-Effector will also output a cumulative distribution function plot for the predicted targets of that miRNA.
+Output includes a text file of predictions ("predictions.txt"), a stacked bar plot showing the proportion of miRNAs classified as either "BinderEffectors", "BinderNotEffectors", "NotBinderEffector", and "NotBinderNotEffector" ("inputGene_stackedbarplot.pdf"), and a ranked plot for predicted "BinderEffectors" ("BErankplot.pdf"). If the optional miRNA flag is passed, sRNA-Effector will also output a cumulative distribution function plot for the predicted targets of that miRNA.
 
 Output from example use: <br>
 <p align="center">
