@@ -76,7 +76,7 @@ cat(paste("\n\n Generating CDF plot for", miRinput))
 }
 
 
-cat("\n\nCalculating effect sizes...")
+cat("\n\nCalculating effect sizes...\n\n")
 all_mirsAgo2 <- plyr::ldply(names(mir_gmt), function(x){
 			      set.seed(123)	    
 			      mtar <- data.frame(mir_gmt[x])
