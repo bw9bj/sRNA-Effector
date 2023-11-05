@@ -30,7 +30,7 @@ multiclass_nnetfit_mirprtints10042022.rds <br>
 
 Example use:
 
-        Rscript sRNAeffector_v1.0.R -g BMI1 -f shBMI1_GSE7578.top.table.tsv
+        Rscript sRNAeffector_v1.0.R -g BMI1 -f shBMI1_GSE7578.top.table.tsv -d miRBase
 
 Options:
 
