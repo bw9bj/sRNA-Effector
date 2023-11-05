@@ -43,6 +43,9 @@ Options:
         -m CHARACTER, --miRNA=CHARACTER
                 MiRNA of interest. Example format: miR-21-5p
 
+        -d CHARACTER, --miRdb=CHARACTER
+                Database of high confidence miRNAs. If using option either input 'miRBase' or 'MirGeneDB'.
+
         -h, --help
                 Show this help message and exit
 
