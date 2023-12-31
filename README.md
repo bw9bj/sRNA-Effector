@@ -37,7 +37,7 @@ Install with git (or download zipped file):
         
         git clone https://github.com/bw9bj/sRNA-Effector.git
 
-        cd sRNA-Effector #or name of downloaded zipped file 
+        cd sRNA-Effector 
 
 
 Example use:
