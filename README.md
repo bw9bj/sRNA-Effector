@@ -22,11 +22,23 @@ readr,
 ggrepel
 
 The following files are also required to run sRNA-Effector: <br>
-c3.mir.mirdb.v7.4.symbols.gmt <br>
-edited-nkim_precursor_miRNAseqs.csv <br>
-high_conf_mature_miRs.txt <br>
-miRmetProts.txt <br>
-multiclass_nnetfit_mirprtints10042022.rds <br>
+c3.mir.mirdb.v7.4.symbols.gmt (file with miRNA targets) <br>
+edited-nkim_precursor_miRNAseqs.csv (file with primary and precursor miRNA sequences) <br>
+high_conf_mature_miRs.txt (list of high confidence miRNAs) <br>
+miRmetProts.txt (list of proteins that interact with known miRNA biogenesis proteins) <br>
+multiclass_nnetfit_mirprtints10042022.rds (final trained sRNA-Effector model) <br>
+
+To run the example, the file shBMI1_GSE7578.top.table.tsv is required. This file can be replaced with any other file with the same format. Specifically, the input file should be a text file with gene names as the first column and log2 fold changes with the knockdown condition as the numerator and the control as the denominator as the second column. Here is a screenshot of a portion of the shBMI1_GSE7578.top.table.tsv file:
+
+<img width="126" alt="image" src="https://github.com/bw9bj/sRNA-Effector/assets/42174020/4cf16623-91e8-4d13-a884-105c7215ab2f">
+
+
+Install with git (or download zipped file):
+        
+        git clone https://github.com/bw9bj/sRNA-Effector.git
+
+        cd sRNA-Effector #or name of downloaded zipped file 
+
 
 Example use:
 
@@ -41,13 +53,17 @@ Options:
                 Log2FC input file name
 
         -m CHARACTER, --miRNA=CHARACTER
-                MiRNA of interest. Example format: miR-21-5p
+                MiRNA of interest. Example format: miR-21-5p. Optional.
 
         -d CHARACTER, --miRdb=CHARACTER
                 Database of high confidence miRNAs. If using option either input 'miRBase' or 'MirGeneDB'.
 
         -h, --help
                 Show this help message and exit
+
+sRNA-Effector has run successfully if the following output appears:
+<img width="567" alt="image" src="https://github.com/bw9bj/sRNA-Effector/assets/42174020/0695bc21-2ad9-4bff-b174-7f7a15995166">
+
 
 
 Output includes a text file of predictions ("predictions.txt"), a stacked bar plot showing the proportion of miRNAs classified as either "BinderEffectors", "BinderNotEffectors", "NotBinderEffector", and "NotBinderNotEffector" ("inputGene_stackedbarplot.pdf"), and a ranked plot for predicted "BinderEffectors" ("BErankplot.pdf"). If the optional miRNA flag is passed, sRNA-Effector will also output a cumulative distribution function plot for the predicted targets of that miRNA.
