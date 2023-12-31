@@ -70,7 +70,7 @@ Output includes a text file of predictions ("predictions.txt"), a stacked bar pl
 
 Output from example use: <br>
 <p align="center">
-<img width="500" alt="image" src="https://github.com/bw9bj/sRNA-Effector/assets/42174020/bd9f9385-faef-413b-8099-5b385429f0ff"> <img width="400" alt="image" src="https://github.com/bw9bj/sRNA-Effector/assets/42174020/e7a3f001-b936-40ba-8453-412db07b1d5e"> <br>
+<img width="500" alt="image" src="https://github.com/bw9bj/sRNA-Effector/assets/42174020/bd9f9385-faef-413b-8099-5b385429f0ff" /> <img width="400" alt="image" src="https://github.com/bw9bj/sRNA-Effector/assets/42174020/e7a3f001-b936-40ba-8453-412db07b1d5e"> <br>
 </p>
 
 
